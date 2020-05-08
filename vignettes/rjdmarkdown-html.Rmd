@@ -1,0 +1,74 @@
+---
+title: "rjdmarkdown with HTML output"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{rjdmarkdown with HTML output}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>", out.width = "100%",
+  fig.dim = c(8, 5), dpi = 300,
+  warning = FALSE, message = FALSE
+)
+```
+
+The functions developped in `rjdmarkdown` are:
+
+- `print_preprocessing()` for the pre-processing model;  
+- `print_decomposition()` for the decomposition;  
+- `print_diagnostics()` to print diagnostics tests on the quality of the seasonal adjustment.
+
+The result is different between X-13ARIMA and TRAMO-SEATS models.
+
+```{r}
+library(rjdmarkdown)
+library(RJDemetra)
+sa_x13 <- x13(ipi_c_eu[, "FR"])
+sa_ts <- tramoseats(ipi_c_eu[, "FR"])
+```
+
+# X-13-ARIMA model
+
+```{r, results='asis', fig.cap = "S-I Ratio"}
+print_preprocessing(sa_x13, format = "html")
+print_decomposition(sa_x13, format = "html", caption = NULL)
+print_diagnostics(sa_x13, format = "html")
+```
+
+# TRAMO-SEATS model
+
+Some others graphics can also be added with the [`ggdemetra`](https://aqlt.github.io/ggdemetra/) package, for example to add the seasonally adjusted series and its forecasts:
+
+```{r, results='asis', fig.cap = c("Seasonal adjustment of the French industrial production index", "S-I Ratio")}
+library(ggdemetra)
+ggplot(data = ipi_c_eu_df, mapping = aes(x = date, y = FR)) +
+    geom_line() +
+    labs(title = NULL,
+         x = NULL, y = NULL) +
+    geom_sa(component = "y_f", linetype = 2,
+            frequency = 12, method = "tramoseats") + 
+    geom_sa(component = "sa", color = "red") +
+    geom_sa(component = "sa_f", color = "red", linetype = 2)
+print_preprocessing(sa_ts, format = "html")
+print_decomposition(sa_ts, format = "html", caption = NULL)
+print_diagnostics(sa_ts, format = "html")
+```
+
+
+# Reproductibility
+To produce this document, the `knitr` options were set as followed:
+
+```{r, include = TRUE, eval = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>", out.width = "100%",
+  fig.dim = c(7, 5),
+  warning = FALSE, message = FALSE
+)
+```
+
+And the options `results='asis', fig.cap = "S-I Ratio"` were used in the chunks.
