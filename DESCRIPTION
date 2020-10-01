@@ -1,7 +1,7 @@
 Package: rjdmarkdown
 Type: Package
 Title: 'rmarkdown' Extension for Formatted 'RJDemetra' Outputs
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
   person("Alain", "Quartier-la-Tente", role = c("aut", "cre"),
                  email = "alain.quartier@yahoo.fr",
@@ -16,13 +16,13 @@ LazyData: TRUE
 BugReports: https://github.com/AQLT/rjdmarkdown/issues
 SystemRequirements: Java SE 8 or higher
 Encoding: UTF-8
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
 VignetteBuilder: knitr
 Suggests: rmarkdown, ggdemetra
 NeedsCompilation: no
-Packaged: 2020-05-06 23:47:59 UTC; alainquartierlatente
+Packaged: 2020-10-01 18:24:16 UTC; alainquartierlatente
 Author: Alain Quartier-la-Tente [aut, cre]
     (<https://orcid.org/0000-0001-7890-3857>)
 Maintainer: Alain Quartier-la-Tente <alain.quartier@yahoo.fr>
 Repository: CRAN
-Date/Publication: 2020-05-08 18:20:02 UTC
+Date/Publication: 2020-10-01 19:20:03 UTC
