@@ -1,3 +1,9 @@
+# rjdmarkdown 0.2.1
+
+* `rjdmarkdown` now depends on `RJDemetra`.
+
+* SystemRequirements update for CRAN policies.
+
 # rjdmarkdown 0.2.0
 
 ## New function

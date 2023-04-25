@@ -55,10 +55,11 @@ print_diagnostics(sa_ts)
 #  create_rmd(sa_ts, output_file, output_format = "pdf_document",
 #             preprocessing_fun = preprocessing_customized,
 #             decomposition_fun = decomposition_customized,
-#             knitr_chunk_opts = list(fig.pos = "h", results = "asis",
-#                                     fig.cap =c("Seasonal adjustment of the French industrial production index",
-#                                                 "S-I Ratio"),
-#                                     warning = FALSE, message = FALSE, echo = FALSE)
+#             knitr_chunk_opts = list(
+#               fig.pos = "h", results = "asis",
+#               fig.cap =c("Seasonal adjustment of the French industrial production index",
+#                          "S-I Ratio"),
+#               warning = FALSE, message = FALSE, echo = FALSE)
 #             )
 #  # To open the file:
 #  browseURL(sub(".Rmd",".pdf", output_file, fixed= TRUE))
