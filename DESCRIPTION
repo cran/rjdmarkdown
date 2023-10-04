@@ -1,7 +1,7 @@
 Package: rjdmarkdown
 Type: Package
 Title: 'rmarkdown' Extension for Formatted 'RJDemetra' Outputs
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: c(
   person("Alain", "Quartier-la-Tente", role = c("aut", "cre"),
                  email = "alain.quartier@yahoo.fr",
@@ -19,9 +19,9 @@ RoxygenNote: 7.2.3
 VignetteBuilder: knitr
 Suggests: rmarkdown, ggdemetra
 NeedsCompilation: no
-Packaged: 2023-04-25 19:21:10 UTC; alainquartierlatente
+Packaged: 2023-10-04 16:43:35 UTC; alainquartierlatente
 Author: Alain Quartier-la-Tente [aut, cre]
     (<https://orcid.org/0000-0001-7890-3857>)
 Maintainer: Alain Quartier-la-Tente <alain.quartier@yahoo.fr>
 Repository: CRAN
-Date/Publication: 2023-04-25 20:20:02 UTC
+Date/Publication: 2023-10-04 19:40:01 UTC
