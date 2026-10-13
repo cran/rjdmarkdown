@@ -1,9 +1,9 @@
 Package: rjdmarkdown
 Type: Package
 Title: 'rmarkdown' Extension for Formatted 'RJDemetra' Outputs
-Version: 0.2.2
+Version: 0.2.3
 Authors@R: c(
-  person("Alain", "Quartier-la-Tente", role = c("aut", "cre"),
+  person("Alain", "Quartier-la-Tente", role = c("aut", "cre", "cph"),
                  email = "alain.quartier@yahoo.fr",
                  comment = c(ORCID = "0000-0001-7890-3857")))
 Description: Functions to have nice 'rmarkdown' outputs of the 
@@ -12,16 +12,17 @@ SystemRequirements: Java (>= 8)
 Depends: R (>= 3.1.1), RJDemetra
 Imports: knitr, kableExtra, magrittr
 License: EUPL
-URL: https://github.com/AQLT/rjdmarkdown
+URL: https://github.com/AQLT/rjdmarkdown,
+        https://aqlt.github.io/rjdmarkdown/
 BugReports: https://github.com/AQLT/rjdmarkdown/issues
 Encoding: UTF-8
-RoxygenNote: 7.2.3
 VignetteBuilder: knitr
 Suggests: rmarkdown, ggdemetra
+Config/roxygen2/version: 8.1.0
 NeedsCompilation: no
-Packaged: 2023-10-04 16:43:35 UTC; alainquartierlatente
-Author: Alain Quartier-la-Tente [aut, cre]
-    (<https://orcid.org/0000-0001-7890-3857>)
+Packaged: 2026-10-13 20:52:55 UTC; alainquartierlatente
+Author: Alain Quartier-la-Tente [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-7890-3857>)
 Maintainer: Alain Quartier-la-Tente <alain.quartier@yahoo.fr>
 Repository: CRAN
-Date/Publication: 2023-10-04 19:40:01 UTC
+Date/Publication: 2026-10-13 21:10:02 UTC

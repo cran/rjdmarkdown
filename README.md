@@ -4,18 +4,18 @@
 # rjdmarkdown
 
 [![R-CMD-check](https://github.com/AQLT/rjdmarkdown/workflows/R-CMD-check/badge.svg)](https://github.com/AQLT/rjdmarkdown/actions)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rjdmarkdown)](https://cran.r-project.org/package=rjdmarkdown)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/rjdmarkdown)](https://cran.r-project.org/package=rjdmarkdown)
 [![CRAN last
-release](http://www.r-pkg.org/badges/last-release/rjdmarkdown)](https://cran.r-project.org/package=rjdmarkdown)
+release](https://www.r-pkg.org/badges/last-release/rjdmarkdown)](https://cran.r-project.org/package=rjdmarkdown)
 [![CRAN monthly
-downloads](http://cranlogs.r-pkg.org/badges/rjdmarkdown?color=lightgrey)](https://cran.r-project.org/package=rjdmarkdown)
+downloads](https://cranlogs.r-pkg.org/badges/rjdmarkdown?color=lightgrey)](https://cran.r-project.org/package=rjdmarkdown)
 [![CRAN
-downloads](http://cranlogs.r-pkg.org/badges/grand-total/rjdmarkdown?color=lightgrey)](https://cran.r-project.org/package=rjdmarkdown)
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/rjdmarkdown?color=lightgrey)](https://cran.r-project.org/package=rjdmarkdown)
 
 ## Overview
 
 rjdmarkdown gives a set of functions to print nicely your models created
-by [RJDemetra](https://github.com/jdemetra/rjdemetra).
+by [RJDemetra](https://github.com/rjdverse/rjdemetra).
 
 ## Installation
 
